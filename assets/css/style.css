@@ -37,11 +37,6 @@ body{
     margin-inline: auto;
 }
 
-a{
-    text-decoration: none;
-    color: white
-}
-
 /* common */
 
 .btn{
@@ -61,6 +56,11 @@ header{
     z-index: 1;
     top: 0;
     width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 nav{
@@ -398,6 +398,7 @@ main{
     line-height: 2.2rem;
     margin-bottom: 20px;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .s5-right p{
@@ -452,6 +453,88 @@ main{
 
     .s5-left{
         flex-basis: 75%;
+    }
+
+}
+
+/* sixth section */
+
+.sixth-section{
+    background-color: #9792E4;
+    padding: 80px 0 50px 0;
+}
+
+.s6-container{
+    text-align: center;
+}
+
+.s6-container *{
+    margin-bottom: 30px;
+}
+
+.s6-container h5{
+    font-size: 1rem;
+    color: lightgray;
+}
+
+.s6-container h3{
+    color: white;
+    font-size: 2rem;
+}
+
+.s6-container p{
+    line-height: 1.8rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.s6-container span{
+    color: white;
+}
+
+.s6-btn{
+    background-color: white;
+    width: 300px;
+    color:#9792E4;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.s6-container h2{
+    color: #FDC15F;
+    font-size: 3rem;
+}
+
+.s6-container a{
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    
+    .s6-container{
+        width: 50%;
+    }
+
+    .s6-container h2{
+        font-size: 3.5rem;
+    }
+
+    .s6-container h3{
+        color: white;
+        font-size: 2.3rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+    .s6-container h2{
+        font-size: 4rem;
+    }
+
+    .s6-container h3{
+        color: white;
+        font-size: 2.6rem;
     }
 
 }
