@@ -139,6 +139,10 @@ main{
     padding: 20px 0 ;
 }
 
+.first-section .large-card p{
+    font-size: 1.2rem;
+}
+
 .first-section .card *{
     margin: 20px 0;
 }
@@ -150,6 +154,10 @@ main{
 
 .first-section .card img{
     width: 100%;
+}
+
+.first-section .card p{
+    font-size: 1.2rem;
 }
 
 .first-section .card i{
@@ -232,6 +240,10 @@ main{
     padding: 20px;
 }
 
+.second-section p{
+    font-size: 1.2rem;
+}
+
 .arrow{
     background-color: #9792E4;
     font-size: 1.5rem;
@@ -267,6 +279,8 @@ main{
 
 .container-s3 h2{
     color: #9792E4;
+    font-size: 2rem;
+    padding-top: 10px;
 }
 
 .container-s3 .card, .s3-intro{
@@ -275,6 +289,10 @@ main{
 
 .container-s3 .s3-intro{
     margin: 30px 0;
+}
+
+.s3-intro p{
+    font-size: 1.2rem;
 }
 
 .container-s3 .card{
@@ -302,6 +320,7 @@ main{
 
 .container-s3 .card p{
     line-height: 1.8rem;
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px){
@@ -398,7 +417,7 @@ main{
     line-height: 2.2rem;
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .s5-right p{
@@ -535,6 +554,48 @@ main{
     .s6-container h3{
         color: white;
         font-size: 2.6rem;
+    }
+
+}
+
+/* footer */
+
+footer{
+    background-color: #333333;
+    color: white;
+    padding: 50px 0;
+}
+
+.foot-container{
+    text-align: center;
+}
+
+.foot-container span{
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.foot-container div{
+    padding: 20px 0;
+}
+
+.foot-container a{
+    color: #9792E4;
+}
+
+@media screen and (min-width: 768px){
+    
+    .foot-container{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+    .foot-container{
+        width: 30%;
     }
 
 }
