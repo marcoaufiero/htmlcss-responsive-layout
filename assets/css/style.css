@@ -16,6 +16,10 @@ body{
     display: flex;
 }
 
+.f-wrap{
+    flex-wrap: wrap;
+}
+
 .f-space-between{
     justify-content: space-between;
 }
@@ -50,6 +54,7 @@ header{
     background-color: #0084FD;
     padding: 15px 0;
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
 }
@@ -97,6 +102,96 @@ nav a{
 
     .menu-options{
         display: block;
+    }
+
+}
+
+/* MAIN */
+
+main{
+    margin-top: 150px;
+}
+
+/* intro-section */
+
+.large-card{
+    flex-basis: 100%;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
+.card{
+    flex-basis: 100%;
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.large-card h2, p{
+    padding: 20px 0 ;
+}
+
+.card *{
+    margin: 20px 0;
+}
+
+.large-card img{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card i{
+    font-size: 100px;
+    color: #0084FD;
+}
+
+.intro-btn{
+    background-color: #0084FD;
+    color: white;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.intro-section h2{
+    color: #0084FD;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:768px){
+    
+    .large-card{
+        flex-basis: 66%;
+    }
+
+    .card{
+        flex-basis: 32%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+    .large-card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .large-card-left{
+        flex-basis: 35%;
+    }
+    
+    .large-card-right{
+        align-self: flex-end;
+        flex-basis: 60%;
     }
 
 }
