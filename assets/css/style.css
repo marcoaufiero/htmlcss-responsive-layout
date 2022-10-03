@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility */
+
+.flex{
+    display: flex;
+}
+
+.f-space-between{
+    justify-content: space-between;
+}
+
+.f-align-center{
+    align-items: center;
+}
+
+.container-90{
+    width: 90%;
+    margin-inline: auto;
+}
+
+/* header */
+
+header{
+    background-color: #0084FD;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    color: white;
+}
+
+nav i{
+    font-size: 30px;
+}
