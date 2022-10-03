@@ -114,7 +114,7 @@ main{
 
 /* intro-section */
 
-.large-card{
+.first-section .large-card{
     flex-basis: 100%;
     background-color: #B5DDFF;
     border-radius: 20px;
@@ -122,7 +122,7 @@ main{
     margin: 20px 0;
 }
 
-.card{
+.first-section .card{
     flex-basis: 100%;
     background-color: #B5DDFF;
     border-radius: 20px;
@@ -131,24 +131,24 @@ main{
     text-align: center;
 }
 
-.large-card h2, p{
+.first-section .large-card h2, p{
     padding: 20px 0 ;
 }
 
-.card *{
+.first-section .card *{
     margin: 20px 0;
 }
 
-.large-card img{
+.first-section .large-card img{
     width: 100%;
     padding-top: 20px;
 }
 
-.card img{
+.first-section .card img{
     width: 100%;
 }
 
-.card i{
+.first-section .card i{
     font-size: 100px;
     color: #0084FD;
 }
@@ -162,36 +162,96 @@ main{
     margin: 10px 0;
 }
 
-.intro-section h2{
+.first-section h2{
     color: #0084FD;
     margin-top: 20px;
 }
 
 @media screen and (min-width:768px){
     
-    .large-card{
+    .first-section .large-card{
         flex-basis: 66%;
     }
 
-    .card{
+    .first-section .card{
         flex-basis: 32%;
     }
 }
 
 @media screen and (min-width: 1024px){
     
-    .large-card{
+    .first-section .large-card{
         display: flex;
         justify-content: space-between;
     }
 
-    .large-card-left{
+    .first-section .large-card-left{
         flex-basis: 35%;
     }
     
-    .large-card-right{
+    .first-section .large-card-right{
         align-self: flex-end;
         flex-basis: 60%;
+    }
+
+}
+
+/* second section */
+
+.second-section{
+    background-color: #9792E4;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.second-section .card{
+    flex-basis: 100%;
+    margin: 30px 0;
+}
+
+.second-section .card img{
+    width: 100%;
+}
+
+.second-section .card-top h2{
+    padding: 50px 0 20px 0;
+}
+
+.second-section .card-top{
+    color: white;
+}
+
+.second-section .card-bottom{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.arrow{
+    background-color: #9792E4;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .card-container-s2{
+        justify-content: space-between;
+    }
+    
+    .second-section .card-top{
+        flex-basis: 55%;
+        align-self: baseline;
+        margin-top: 100px;
+    }
+
+    .second-section .card-bottom{
+        flex-basis: 40%;
+        align-self: flex-end;
+        margin-top: 200px;
+        margin-bottom: 50px;
     }
 
 }
