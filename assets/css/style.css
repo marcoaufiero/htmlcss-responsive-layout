@@ -93,23 +93,6 @@ nav a{
     display: none;
 }
 
-@media screen and (min-width: 1024px){
-    
-    .container{
-        width: 70%;
-        margin-inline: auto;
-    }
-    
-    .burger-menu{
-        display: none;
-    }
-
-    .menu-options{
-        display: block;
-    }
-
-}
-
 /* MAIN */
 
 main{
@@ -148,8 +131,9 @@ main{
 }
 
 .first-section .large-card img{
-    width: 100%;
+    width: 70%;
     padding-top: 20px;
+    display: block;
 }
 
 .first-section .card img{
@@ -177,35 +161,6 @@ main{
 .first-section h2{
     color: #0084FD;
     margin-top: 20px;
-}
-
-@media screen and (min-width:768px){
-    
-    .first-section .large-card{
-        flex-basis: 66%;
-    }
-
-    .first-section .card{
-        flex-basis: 32%;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    
-    .first-section .large-card{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .first-section .large-card-left{
-        flex-basis: 35%;
-    }
-    
-    .first-section .large-card-right{
-        align-self: flex-end;
-        flex-basis: 60%;
-    }
-
 }
 
 /* second section */
@@ -241,34 +196,19 @@ main{
 }
 
 .second-section p{
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+.italic{
+    font-style: italic;
+    font-weight: 600;
 }
 
 .arrow{
     background-color: #9792E4;
     font-size: 1.5rem;
-    padding: 10px 15px;
+    padding: 10px 17px;
     border-radius: 50%;
-}
-
-@media screen and (min-width: 1024px){
-    
-    .card-container-s2{
-        justify-content: space-between;
-    }
-    
-    .second-section .card-top{
-        flex-basis: 55%;
-        align-self: baseline;
-        margin-top: 100px;
-    }
-
-    .second-section .card-bottom{
-        flex-basis: 40%;
-        align-self: flex-end;
-        margin-top: 200px;
-    }
-
 }
 
 /* third section */
@@ -323,21 +263,6 @@ main{
     font-size: 1.2rem;
 }
 
-@media screen and (min-width: 768px){
-    
-    .container-s3 .card{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .container-s3 .img-box{
-        flex-shrink: 0;
-    }
-
-
-}
-
 /* fourth section */
 
 .fourth-section{
@@ -381,27 +306,6 @@ main{
     color: white;
 }
 
-@media screen and (min-width: 768px){
-    
-    .card-container-s4{
-        justify-content: space-between;
-    }
-    
-    .card-container-s4 .card{
-        flex-basis: 49%;
-    }
-
-
-}
-
-@media screen and (min-width: 1024px){
-    
-    .card-container-s4 .card{
-        flex-basis: 32%;
-    }
-    
-}
-
 /* fifth section */
 
 .fifth-section{
@@ -429,11 +333,8 @@ main{
 
 .container-s5 .img-box{
     position: relative;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 50%;
+    border-radius: 50%;
     aspect-ratio: 1/1;
-    overflow: hidden;
     width: 150px;
     height: 150px;
 }
@@ -448,7 +349,7 @@ main{
 
 
 .container-s5 .img-box img{
-    object-fit: cover;
+    border-radius: 50%;
     width: 100%;
     height: 100%;
 }
@@ -456,24 +357,7 @@ main{
 .s5-btn{
     background-color: #9792E4;
     color: white;
-    font-size: 0.6rem;
-}
-
-@media screen and (min-width: 768px){
-    
-    .container-s5{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .s5-right{
-        flex-basis: 20%;
-    }
-
-    .s5-left{
-        flex-basis: 75%;
-    }
-
+    font-size: 0.8rem;
 }
 
 /* sixth section */
@@ -528,36 +412,6 @@ main{
     color: white;
 }
 
-@media screen and (min-width: 768px){
-    
-    .s6-container{
-        width: 50%;
-    }
-
-    .s6-container h2{
-        font-size: 3.5rem;
-    }
-
-    .s6-container h3{
-        color: white;
-        font-size: 2.3rem;
-    }
-
-}
-
-@media screen and (min-width: 1024px){
-    
-    .s6-container h2{
-        font-size: 4rem;
-    }
-
-    .s6-container h3{
-        color: white;
-        font-size: 2.6rem;
-    }
-
-}
-
 /* footer */
 
 footer{
@@ -584,18 +438,193 @@ footer{
     color: #9792E4;
 }
 
-@media screen and (min-width: 768px){
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media screen and (min-width:768px){
     
+    /* first section */
+
+    .first-section .large-card{
+        flex-basis: 66%;
+    }
+
+    .first-section .large-card img{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    .first-section .card{
+        flex-basis: 32%;
+    }
+
+    /* third section */
+
+    .container-s3 .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-s3 .img-box{
+        flex-shrink: 0;
+    }
+
+    /* fourth section */
+
+    .card-container-s4{
+        justify-content: space-between;
+    }
+    
+    .card-container-s4 .card{
+        flex-basis: 49%;
+    }
+
+    /* fifth section */
+
+    .container-s5{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-s5 .img-box{
+    
+        width: 200px;
+        height: 200px;
+    }
+
+    .s5-right{
+        flex-basis: 30%;
+    }
+
+    .s5-left{
+        flex-basis: 55%;
+    }
+
+    .s5-btn{
+        font-size: 0.8rem;
+    }
+
+    /* sixth section */
+    
+    .s6-container{
+        width: 50%;
+    }
+
+    .s6-container h2{
+        font-size: 3.5rem;
+    }
+
+    .s6-container h3{
+        color: white;
+        font-size: 2.3rem;
+    }
+
+    /* footer */
+
     .foot-container{
         width: 40%;
     }
 
 }
 
+/* DESKTOP */
+
 @media screen and (min-width: 1024px){
     
+    .container{
+        width: 70%;
+        margin-inline: auto;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .menu-options{
+        display: block;
+    }
+
+    /* first section */
+
+    .first-section .large-card{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-section .large-card img{
+        width: 80%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .first-section .large-card-left{
+        flex-basis: 50%;
+    }
+    
+    .first-section .large-card-right{
+        align-self: flex-end;
+        flex-basis: 50%;
+    }
+
+    /* second section */
+
+    .card-container-s2{
+        justify-content: space-between;
+        width: 60%;
+    }
+    
+    .second-section .card-top{
+        flex-basis: 45%;
+        margin: 100px 0;
+    }
+
+    .second-section .card-bottom{
+        flex-basis: 45%;
+        align-self: flex-end;
+        margin-top: 200px;
+    }
+
+    /* fourth section */
+
+    .card-container-s4 .card{
+        flex-basis: 32%;
+    }
+
+    /* fifth section */
+
+    .container-s5 .img-box{
+    
+        width: 250px;
+        height: 250px;
+    }
+
+    .s5-right{
+        flex-basis: 40%;
+    }
+
+    .s5-left{
+        flex-basis: 45%;
+    }
+
+    .s5-btn{
+        font-size: 1rem;
+    }
+
+    /* sixth section */
+
+    .s6-container h2{
+        font-size: 4rem;
+    }
+
+    .s6-container h3{
+        font-size: 2.6rem;
+    }
+
+    /* footer */
+
     .foot-container{
         width: 30%;
     }
-
 }
